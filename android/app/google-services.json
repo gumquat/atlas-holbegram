@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814767434772",
+    "project_id": "holbegram-46607",
+    "storage_bucket": "holbegram-46607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814767434772:android:f28002d200f40028c3cb01",
+        "android_client_info": {
+          "package_name": "evan.atlas.holbegram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwRci_jwr_RpbMzLzuOf_7IeSqr9_m0bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
