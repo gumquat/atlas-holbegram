@@ -3,9 +3,8 @@ plugins {
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
-     // Add the dependency for the Google services Gradle plugin
-    id("com.google.gms.google-services") version "4.4.2" apply false
-
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 def localProperties = new Properties()
@@ -60,23 +59,17 @@ flutter {
     source = "../.."
 }
 
-buildscript {
-repositories {
-    // Check that you have the following line (if not, add it):
-    google()  // Google's Maven repository
-}
 dependencies {
-    ...
-    // Add this line
-    classpath 'com.google.gms:google-services:4.3.13'
-}
-}
 
-allprojects {
-...
-repositories {
-    // Check that you have the following line (if not, add it):
-    google()  // Google's Maven repository
-    ...
-}
+  // Import the Firebase BoM
+
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+
+
+  // TODO: Add the dependencies for Firebase products you want to use
+
+  // When using the BoM, don't specify versions in Firebase dependencies
+
+  // https://firebase.google.com/docs/android/setup#available-libraries
+
 }
